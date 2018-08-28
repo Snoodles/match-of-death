@@ -11,7 +11,7 @@
 	
 	developer 					"-"
 	developer_url 				"-"
-	icon 						"resource/icon/icon"
+	"icon"			"resource/bagel"
 	
 	SupportsDX8		"0"
 	SupportsDX9		"1"
