@@ -1,0 +1,65 @@
+"GameInfo"
+{
+	game						"Match of Death: Election Year"
+	title						""
+	title2						""
+	type 						multiplayer_only
+
+	//nomodels 1
+	//gamelogo 1 
+	nodegraph 0
+	
+	developer 					"-"
+	developer_url 				"-"
+	icon 						"resource/icon/icon"
+	
+	SupportsDX8		"0"
+	SupportsDX9		"1"
+	
+	//GameData	"bleg.fgd"
+	//InstancePath "maps/instances/"
+	
+	hidden_maps
+	{
+		"test_speakers"		1
+		"test_hardware"		1
+	}
+	
+	FileSystem
+	{
+		SteamAppId				243750 // 2013 MP
+		
+		SearchPaths
+		{
+			game+mod			|gameinfo_path|custom/*
+			game+mod+mod_write+default_write_path		|gameinfo_path|.
+			gamebin				|gameinfo_path|bin
+			
+			// Mount all VPKs & subfolders under content.		
+			game				|gameinfo_path|content/*
+			
+			// Dedicated server mounting
+			game				|all_source_engine_paths|hl2mp/hl2mp_pak.vpk
+			game				|all_source_engine_paths|hl2mp/
+			game				|all_source_engine_paths|cstrike/cstrike_pak.vpk
+			game				|all_source_engine_paths|cstrike/
+
+			// HL2
+			game				|all_source_engine_paths|hl2/hl2_english.vpk
+			game				|all_source_engine_paths|hl2/hl2_pak.vpk
+			game				|all_source_engine_paths|hl2/hl2_textures.vpk
+			game				|all_source_engine_paths|hl2/hl2_sound_vo_english.vpk
+			game				|all_source_engine_paths|hl2/hl2_sound_misc.vpk
+			game				|all_source_engine_paths|hl2/hl2_misc.vpk
+			platform			|all_source_engine_paths|platform/platform_misc.vpk
+
+			// Last, mount in shared HL2 loose files
+			game				|all_source_engine_paths|hl2mp
+			game				|all_source_engine_paths|hl2
+			platform			|all_source_engine_paths|platform
+			
+			// Mount any misc downloaded content last.
+			game+download		|gameinfo_path|download
+		}
+	}
+}
