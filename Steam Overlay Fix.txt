@@ -1,0 +1,7 @@
+Make a shortcut to HL2.exe from the source sdk multiplayer 2013 folder
+
+Edit the target to suit where the mod is installed
+
+Run the mod using the desktop shortcut
+
+"E:\SteamLibrary\steamapps\common\Half-Life 2 Deathmatch\hl2.exe" -game "C:\Program Files (x86)\Steam\SteamApps\sourcemods\MoD" -steam
