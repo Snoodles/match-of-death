@@ -1,8 +1,8 @@
 "GameInfo"
 {
 	game						"Match of Death: Election Year"
-	title						""
-	title2						""
+	title						"Match of Death:"
+	title2						"Election Year"
 	type 						multiplayer_only
 
 	//nomodels 1
